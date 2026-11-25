@@ -53,7 +53,8 @@ nomes.unshift("Ro") // adiciona um valor ao COMEÇO do array
 // e se eu precisar correr todo o array?
 // => arrow function usado para definir uma função anonima
 // () => {} declaração da função anomima
-nomes.forEach((linha,contador)=>{
+nomes.forEach((contador, linha)=>{
+    contador = 0
     console.log("O " + (contador + 1) + "º registro é " + linha)
 
  
