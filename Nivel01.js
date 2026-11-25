@@ -66,10 +66,10 @@ if(lista == almoxarifado){
 //07
 let listaOficial = ["Lucas", "Mariana", "Thiago", "Beatriz"]
 function fnEstaNaLista(lista, nome){
-   if(lista == listaOficial && nome == listaOficial[0] || listaOficial[1] || listaOficial[2] || listaOficial[3] ){
+   if(lista.includes(nome)){
       console.log(nome + " Esta na lista")
    }else{
-      console.log(nome + " Não esta na lista ")
+      console.log(nome + " Não esta na lista")
    }
 }
 
@@ -124,8 +124,8 @@ function fnAtualizarPreco(lista, indice, novoValor){
 
 //10
 function fnCriarBoletim(nota1, nota2, nota3){
-   let notas = [nota1, nota2, nota3]
+   let notasAluno = [nota1, nota2, nota3]
 
-console.log("Boletim:" + notas)
+console.log("Boletim:" + notasAluno)
 
 }
