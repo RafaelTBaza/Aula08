@@ -103,23 +103,15 @@ function fnConsultarCorredor(lista, item){
    }
 
 //09
-let precoLanche = ["15.00", "25.00", "40.00"]
+let basePreco = [15.00, 25.00, 40.00]
+
 function fnAtualizarPreco(lista, indice, novoValor){
-   if(lista == precoLanche && indice == precoLanche[0]){
-      precoLanche[0] = novoValor
-      console.log("Alteração de valores concluida")
-      console.log(precoLanche)
+   if(lista.length - 1 < indice){
+      console.log(`Produto não encontrado`)
+      return
    }
-      if(lista == precoLanche && indice == precoLanche[1]){
-      precoLanche[1] = novoValor
-      console.log("Alteração de valores concluida")
-      console.log(precoLanche)
-   }
-      if(lista == precoLanche && indice == precoLanche[2]){
-      precoLanche[2] = novoValor
-      console.log("Alteração de valores concluida")
-      console.log(precoLanche)
-   }
+   lista[indice] = novoValor
+   console.log(`Novos valores de preços ${lista}`)
 }
 
 //10
